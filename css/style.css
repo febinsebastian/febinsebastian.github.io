@@ -29,6 +29,7 @@
 	left: 30%;
 	border: 2px solid #fff;
 	padding: 20px;
+	background: rgba(0,0,0,0.5);
 }
 
 .name-div h1 {
@@ -59,7 +60,10 @@
 .my-img{
 	border-radius: 50%;
 	width: 250px;
-	height: 200px;
+	height: 250px;
+	object-fit: cover;
+	display: block;
+	margin: auto;
 }
 
 .btn-resume {
@@ -92,6 +96,8 @@
 img.skill {
 	width: 110px;
 	height: 110px;
+	display: block;
+	margin: auto;
 }
 .four-section {
 	text-align: center;
@@ -236,7 +242,7 @@ div.experience{
 }
 .wrapper {
 	width: 100%;
-	height: 100vh;
+	height: 73vh;
 }
 
 .holder {
