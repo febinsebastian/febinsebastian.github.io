@@ -98,6 +98,7 @@ img.skill {
 	height: 110px;
 	display: block;
 	margin: auto;
+	object-fit: contain;
 }
 .four-section {
 	text-align: center;
@@ -242,7 +243,7 @@ div.experience{
 }
 .wrapper {
 	width: 100%;
-	height: 73vh;
+	height: 90vh;
 }
 
 .holder {
@@ -324,7 +325,7 @@ ul.holder li.left {
 		margin-bottom: 10px;
 	}
 	.my-img{
-		margin: 27px 0 0px 92px;
+		margin-top: 27px;
 	}
 	.name-div h1{
 		font-size: 41px;	
