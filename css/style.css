@@ -215,11 +215,8 @@ input.input-box:focus, textarea.input-box:focus{
 	font-family: aller;
 	font-size: 2.7rem;
 }
-.porfolio-section .work{
-	width: 100%;
-	height: 250px;
-	background-color: #e4e4e4;
-	float: left;
+.portfolio-wrapper{
+	margin-top: 40px;
 }
 div.experience{
 	padding: 15px 0 15px 0;		
@@ -298,6 +295,30 @@ ul.holder li.left {
 .parallax-window {
     min-height: 500px;
     background: transparent;
+}
+img.portfolio-img{
+    display: block;
+	margin: auto;
+	height: 210px;
+}
+.portfolio-wrapper .title{
+	top: 40px;
+	text-align: center;
+	color: #333;
+	font-size: 1.4em;
+	font-family: allerRegular;
+}
+.portfolio-wrapper .github-btn{
+	bottom: 10px;
+	border-radius: 0;
+	margin-top: 20px;
+	width: 150px;
+	left: 40%;
+	font-size: 1.5em;	
+	font-family: allerRegular;
+	color: rgb(255, 255, 255);
+    background-color: #42cc39;
+    border: 1px solid #42cc39;
 }
 @media(max-width:768px){
 	ul.holder li:before, .holder:before, ul.holder li:after {
