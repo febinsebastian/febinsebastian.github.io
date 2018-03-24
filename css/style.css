@@ -46,6 +46,7 @@
 	text-align: center;
 	background-color: #e8e8e8;
 	padding: 50px;
+	position: relative;
 }
 .second-section h2{
 	color: #5a5656;
@@ -54,16 +55,23 @@
 }
 .second-section p{
 	font-size: 20px;
-	margin-top: 30px;		
+	margin-top: 55px;		
 	font-family: allerRegular;
 }
 .my-img{
 	border-radius: 50%;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	object-fit: cover;
 	display: block;
 	margin: auto;
+	position: absolute;
+	border: 2px solid white;
+	top: -100px;
+	left: 42%;
+	-webkit-box-shadow: 10px -5px 14px -4px rgba(0,0,0,0.25);
+-moz-box-shadow: 10px -5px 14px -4px rgba(0,0,0,0.25);
+box-shadow: 10px -5px 14px -4px rgba(0,0,0,0.25);
 }
 
 .btn-resume {
@@ -180,9 +188,11 @@ input.input-box, textarea.input-box{
     border-radius: 0;	
     resize: none;
     background-color: #e4e4e4;
+    box-shadow: none;
 }
 input.input-box:focus, textarea.input-box:focus{
 	background-color: #e4e4e4;
+	box-shadow: none;
 }
 .five-section span{
 	display: -webkit-box;	

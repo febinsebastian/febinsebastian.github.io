@@ -9,9 +9,8 @@
 <body>
 
 <div class="loader hide"><img src="Images/progress.gif"></div>
-<nav class="navbar navbar-default navbar-fixed-top portfolio-navbar">
+<!-- <nav class="navbar navbar-default navbar-fixed-top portfolio-navbar">
 		<div class="container-fluid">
-		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			  <span class="sr-only">Toggle navigation</span>
@@ -22,7 +21,6 @@
 			<a class="navbar-brand" href="#">FEBIN</a>
 		  </div>
 	  
-		  <!-- Collect the nav links, forms, and other content for toggling -->
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 			  <li class="active"><a href="#">Home</a></li>
@@ -32,15 +30,16 @@
 			  <li><a href="#portfolio">Portfolio</a></li>
 			  <li><a href="#getInTouch">Get In Touch</a></li>
 			</ul>          
-		  </div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	  </nav>  
+		  </div>
+		</div>
+	  </nav>   -->
 	  
 	<div class="container-fluid first-section">
 		<div class="row">
 			<div class="col-sm-12 col-xs-12">
 				<div class="parallax-window" data-parallax="scroll" data-image-src="Images/img3.jpg"></div>
 					<div class="name-div">
+						<p></p>
 						<h1>I'm Febin Sebastian E </h1>
 						<h2>Frontend Developer</h2>
 					</div>
@@ -50,18 +49,19 @@
 	<div class="container-fluid second-section" id="about">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2>ABOUT ME</h2>				
+				<h2><!-- ABOUT ME --></h2>				
 			</div>
 		</div>
 		<div class="row">	
-			<div class="col-sm-7 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
+			<div class="col-sm-10 col-xs-12 col-sm-offset-1 wow fadeInRight" data-wow-delay="0.2s">
 				<p>A Bachelor of Computer Science and Engineering Professional with 2+ years of IT experience in the area of Web Front-End Development.
 				I have fair knowledge in web technologies & User Interface (UI) development.</p>
 				<a href="docs/CV_Febin Sebastian.pdf" target="_blank" class="btn btn-resume">DOWNLOAD RESUME</a>
 			</div>
-			<div class="col-sm-5 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+			<img class="img-responsive my-img" src="Images/myimage1.jpeg">
+			<!-- <div class="col-sm-5 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
 				<img class="img-responsive my-img" src="Images/myimage1.jpeg">
-			</div>
+			</div> -->
 		</div>
 		
 	</div>
@@ -199,7 +199,7 @@
 	</div>
 	<div class="container-fluid footer">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12 col-md-12">
 				<a target="_blank" href="https://in.linkedin.com/in/febin-sebastian-e-3404b1104"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://www.facebook.com/febinelayanithottathil"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>				
 				<i class="fa fa-google-plus-square" aria-hidden="true"></i>				
@@ -211,6 +211,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/parallax.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/typed.js"></script>
 	<script>
 		setTimeout(function(){ $('.loader').hide(); }, 3000);
 	</script>
@@ -222,7 +223,13 @@
 			animateClass: 'animated',
 			offset: 100
 		});
-		wow.init();
+		wow.init();	
+	</script>
+	<script type="text/javascript">
+		var typed = new Typed('.name-div p', {
+		  strings: ["First sentence.", "Second sentence."],
+		  typeSpeed: 30
+		});
 	</script>
 	
 </body>
